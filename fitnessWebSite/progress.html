@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Your Progress</title>
+  <link rel="stylesheet" href="fitstyle.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="FFlogo.png" alt="FitFlex Logo" class="logo">
+      <h1>FitFlex</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="progress.html">Progress</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <main>
+    <section id="progress" class="animated-section">
+      <h2>Track Your Average Progress</h2>
+      <div class="form">
+        <label for="steps">Enter Steps:</label>
+        <input type="number" id="steps" name="steps" placeholder="Enter your steps" min="1000">
+        <label for="age">Select Age Group:</label>
+        <select id="age" name="age">
+          <option value="10-18">10-18 yrs</option>
+          <option value="19-30">19-30 yrs</option>
+          <option value="31-50">31-50 yrs</option>
+          <option value="51-60">51-60 yrs</option>
+        </select>
+        <button onclick="calculateProgress()">Calculate</button>
+      </div>
+      <div class="progress-summary">
+        <div class="metric">
+          <h3>Average Steps</h3>
+          <p id="avgSteps">-</p>
+        </div>
+        <div class="metric">
+          <h3>Average Calories Burned</h3>
+          <p id="avgKcal">-</p>
+        </div>
+      </div>
+      <div id="chartContainer">
+        <canvas id="progressChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FitFlex</p>
+  </footer>
+
+  <script src="progress.js"></script>
+</body>
+</html>

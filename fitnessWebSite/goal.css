@@ -1,0 +1,207 @@
+/* CSS for the logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px; /* Add some spacing between the logo and the header text */
+}
+
+header {
+  background-color: #f36601; /* Transparent dark background */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:5px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 50px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+body {
+  background-color: #040404;
+  background-repeat: no-repeat, repeat;
+  background-size: 1600px ;
+  background-color: #e5e3e3;
+}
+
+p {
+  color: #fcf9f9;
+  border-radius: 5px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 
+               0 0 10px rgba(0, 0, 0, 0.5), 
+               0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  padding: 20px; /* Add padding to the section */
+}
+.image-section {
+  background-image: url('https://wallpapers.com/images/hd/gym-motivation-quotes-nmjgatzu31we4nh7.jpg');
+  background-size: cover; /* Ensure the background covers the entire section */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 500px; /* Adjust the height of the section as needed */
+  position: relative; /* Make the section position relative */
+}
+
+.image-container {
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  height: 100%; /* Ensure the container takes up the full height of its parent */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+  max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+  border-radius: 10px; /* Add rounded corners to the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect to the image */
+}
+
+
+.calculator {
+  position: absolute; /* Position the calculator box absolutely */
+  top: 20px; /* Adjust the distance from the top */
+  left: 50%; /* Move the box to the center horizontally */
+  transform: translateX(-50%); /* Center the box horizontally */
+  background-color: #fdfdfbc7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.calculator input[type="number"],
+.calculator button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.calculator button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background-color: #45a049;
+}
+
+#calories-result {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.goals-container {
+    background-color: #f4eeeef2;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(11, 11, 11);
+    text-align: center;
+  }
+  
+  .options {
+    margin-top: 20px;
+  }
+  
+  .option {
+    background-color: rgb(253, 197, 14);
+    color: #040404;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .chart {
+    margin-top: 10px;
+  }
+  
+  .food-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 5px solid #f79902;
+    box-shadow: 0 0 10px #f4d405d1;
+  }
+  
+  .food-table th {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #908484;
+    
+  }
+  
+  .food-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #908484;
+   
+  }
+  
+  .food-table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  footer {
+    position:sticky;
+    bottom: 0; /* Align to the bottom of the viewport */
+    width: 100%; /* Full width */
+    background-color: #f36601;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 5px;
+  }
+ 
+  /* CSS for button animation */
+.option {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Change background color on hover */
+.option:hover {
+  background-color: #0056b3;
+}

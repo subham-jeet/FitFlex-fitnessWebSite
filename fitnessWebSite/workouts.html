@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Your Workouts</title>
+  <link rel="stylesheet" href="workout.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="FFlogo.png" alt="FitFlex Logo" class="logo">
+      <h1>FitFlex</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="goals.html">Goals</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="progress.html">Progress</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <main>
+    <section id="workouts" class="workout-section">
+      <div class="workout-overlay">
+        <h2>Log Your Workouts</h2>
+        <p>Keep track of your workouts by logging them here.</p>
+        <button id="cardioBtn" class="workout-btn">Cardio</button>
+        <button id="weightTrainingBtn" class="workout-btn">Weight Training</button>
+      </div>
+    </section>
+    
+    <div id="cardioModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Cardio Exercises</h3>
+        <ul class="exercise-list">
+          <li class="exercise">
+            <img src="running.jpeg" alt="Running">
+            <div class="exercise-description">Running<br>
+              "Run with determination, leaving behind doubts and embracing the freedom of the open road."<br>
+              "Feel the wind against your face, as every step brings you closer to your goals."
+            </div>
+          </li>
+          <li class="exercise">
+            <img src="cycling landscape.jpeg" alt="Cycling">
+            <div class="exercise-description">Cycling<br>
+              "Pedal through the challenges, knowing that every hill conquered brings strength."<br>
+              "Let the rhythm of your wheels ignite your spirit, propelling you towards new adventures."
+            </div>
+          </li>
+          <li class="exercise">
+            <img src="jumping rope landscape.jpeg" alt="Jump Rope">
+            <div class="exercise-description">Jump Rope<br>
+              "Jump higher, push harder, and feel the rhythm of success with every leap."<br>
+              "In the world of jump rope, every jump is a step towards your fittest self."
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    
+    <div id="weightTrainingModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Weight Training Exercises</h3>
+        <ul class="exercise-list">
+          <li class="exercise">
+            <img src="dumbbell curl.jpeg" alt="Dumbbell Curl">
+            <div class="exercise-description">Dumbbell curl<br>
+              "With each curl, feel the power within, sculpting your body with determination."<br>
+              "Let the weight of the dumbbell be a testament to your strength, as you rise with every rep."
+            </div>
+          </li>
+          <li class="exercise">
+            <img src="benchpress.jpeg" alt="Bench Press">
+            <div class="exercise-description">Bench Press<br>
+              "Beneath the weight lies the path to greatness; press on, and let your strength soar."<br>
+              "Push through the resistance, knowing that every lift brings you closer to your peak."
+            </div>
+          </li>
+          <li class="exercise">
+            <img src="squat.jpeg" alt="Squat">
+            <div class="exercise-description">Squat<br>
+              "In the depth of the squat, find the resilience to rise stronger than before."<br>
+              "Squat low, rise high; let every rep be a testament to your determination and endurance."
+            </div>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FitFlexr</p>
+  </footer>
+
+  <script src="workout.js"></script> 
+</body>
+</html>
